@@ -1,6 +1,3 @@
-%fuel information (hydrocarbon only)
-a = 1; %number of carbon atoms
-b = 4; %number of hydrogen atoms
 xs = 0; %percent-excess
 xs_f = 1 + xs/100; %multiplication factor for excess
 
@@ -13,8 +10,8 @@ syms x1...%moles of CH4
      x6   %moles of N2
 
 %chemical reaction without excess
-carbon = a*x1 - x4 == 0; %number of carbon atoms
-hydrogen = b*x1 - 2*x5 == 0; %number of hydrogen atoms
+carbon = x1 - x4 == 0; %number of carbon atoms
+hydrogen = 4*x1 - 2*x5 == 0; %number of hydrogen atoms
 oxygen = 2*x2 - 2*x4 - x5 == 0; %number of oxygen atoms
 nitrogen = 2*x3 - 2*x6 == 0; %number of nitrogen atoms
 air = x3 == (79/21)*x2; %oxygen-nitrogen ratio
@@ -33,7 +30,7 @@ moles_stoich = moles;
 
 %air-fuel ratio for stoichiometric air
 AF_stoich = round((moles_stoich(2)*32 + moles_stoich(3)*28.01) / ...
-    (moles_stoich(1)*(12.01*a + 1.01*b)),5,'significant'); 
+    (moles_stoich(1)*(12.01 + 1.01*4)),5,'significant'); 
 
 %balancing chemical equation if there is EXCESS air
 if xs ~= 0
@@ -52,13 +49,13 @@ moles_actual = moles;
 
 %air fuel ratio for excess air
 AF_actual = round((moles_actual(2)*32 + moles_actual(3)*28.01) /...
-    (moles_actual(1)*(12.01*a + 1.01*b)),5,'significant');
+    (moles_actual(1)*(12.01 + 1.01*4)),5,'significant');
 
 %equivalence ratio
 phi = round(AF_stoich / AF_actual,5,'significant');
 
 %inlet conditions
-T1 = 300;
+T1 = 298;
 
 %initialize Cantera
 %initialize reactant mixture
@@ -75,7 +72,7 @@ x(ch4,1) = moles(1);%moles of CH4
 x(o2,1) = moles(2);%moles of O2
 x(n2,1) = moles(3);%moles of N2
 set(reactant,'T',T1,'MoleFractions',x);%defining state of reactants
-product = equilibrate(reactant,'HP');%solves for chemical equilibrium
+product = equilibrate(reactant,'HP')%solves for chemical equilibrium
 
 T_ad = round(temperature(product),0,'decimals') %adiabatic flame temp
 
