@@ -77,5 +77,5 @@ x(n2,1) = moles(3);%moles of N2
 set(reactant,'T',T1,'MoleFractions',x);%defining state of reactants
 product = equilibrate(reactant,'HP');%solves for chemical equilibrium
 
-T_ad = round(temperature(product),0,'decimals'); %adiabatic flame temp
+T_ad = round(temperature(product),0,'decimals') %adiabatic flame temp
 
