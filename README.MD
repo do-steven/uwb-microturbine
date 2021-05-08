@@ -1,4 +1,4 @@
-# Microturbine Simulation - University of Washington Bothell
+# Microturbine Simulation Capstone - University of Washington Bothell
 Created by: Casey Barnett, Steven Do, and Jason Ginos
 
 ## Background
