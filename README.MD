@@ -7,7 +7,7 @@ This repository was made for our senior capstone project for the 2020-21 UWB aca
 [Microturbine System Design - Senior Capstone Project (BME 494-495).pdf](https://github.com/do-steven/uwb-microturbine/files/6446747/Microturbine.System.Design.-.Senior.Capstone.Project.BME.494-495.pdf)
 
 ## How to Install
-To successfully run this simulation, the following will be needed:
+To successfully run this simulation, the following will be needed to be downloaded:
 
 - Files contained in the repository
 - MATLAB 2020 or newer (Older versions have not be tested)
