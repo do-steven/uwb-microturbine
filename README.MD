@@ -10,11 +10,11 @@ This repository was made for our senior capstone project for the 2020-21 UWB aca
 To successfully run this simulation, the following will be needed to be downloaded:
 
 - Files contained in the repository
-- MATLAB 2020 or newer (Older versions have not be tested)
+- MATLAB 2020 or newer (older versions have not be tested)
 - Simulink
 - All Simscape packages
 
-All of the files downloaded from this repository will be needed to be placed in the same folder, as the simulation will reference and pull necessary data from the files in the folder. Once this has been completed, run MATLAB and open the "Microturbine_Master_v2.slx" file. If all of the previous steps have been done properly, the simulation should be able to be changed and run at the users discretion. 
+All of the files downloaded from this repository will be needed to be placed in the same folder, as the simulation will reference and pull necessary data from the files in the folder. Once this has been completed, run MATLAB and open the *Microturbine_Master_v2.slx* file. If all of the previous steps have been done properly, the simulation should be able to be changed and run at the users discretion. 
 
 ## Instructions for Use
 
