@@ -14,6 +14,7 @@ To successfully run this simulation, the following will be needed to be download
 - Simulink
 - All Simscape packages
 
+All of the files downloaded from this repository will be needed to be placed in the same folder, as the simulation will reference and pull necessary data from the files in the folder. Once this has been completed, open the "Microturbine_
 ## Instructions for Use
 
 ## Description
