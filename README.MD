@@ -28,16 +28,31 @@ Descriptions for individuals components are listed below:
 ### 1. Compressor
 *Relevent File(s):* Compressor.mlx | Properties of Air.xlsx
 
+Assumptions:
+- 
+
 ### 2. Regenerator
 *Relevent File(s):* Microturbine_Master_v2.slx
+
+Assumptions:
+- 
 
 ### 3. Combustor
 *Relevent File(s):* combustion.mlx | Properties of Carbon Dioxide.xlsx | Properties of Nitrogen.xlsx | Properties of Oxygen.xlsx | Properties of Water Vapor.xlsx
 
+Assumptions:
+- 
+
 ### 4. Turbine
-*Relevent File(s):* Turbine.mlx 
+*Relevent File(s):* Turbine.mlx
+
+Assumptions:
+- 
 
 ### 5. Synchronous Generator
 *Relevent File(s):* Microturbine_Master_v2.slx
+
+Assumptions:
+- 
 
   
