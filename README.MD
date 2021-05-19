@@ -29,7 +29,10 @@ Descriptions for individuals components are listed below:
 *Relevent File(s):* Compressor.mlx | Properties of Air.xlsx
 
 **Assumptions:**
-- 
+- Changes in kinetic and potential energy are negligible
+- Compressor is adiabatic (no heat transfer in/out)
+- Input combustion by products are assumed to be air as an ideal gas
+- Can be modeled either as isentropic or not
 
 **Summary of Operation:**
 
