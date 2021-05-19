@@ -36,6 +36,8 @@ Descriptions for individuals components are listed below:
 
 **Summary of Operation:**
 
+The compressor subsystem uses rotational mechanical energy (provided by the Turbine) to compress air from the surrounding and pass it into the combustion chamber. Based on the required output power, the turbine subsystem calculates a total mass flow rate (air + fuel). This can be combined with the air/fuel mass ratio (which is known for combustion) in order to determine the required air mass flow rate.
+
 INSERT HERE
 
 ### 2. Regenerator
@@ -68,9 +70,11 @@ INSERT HERE
 **Assumptions:**
 - Changes in kinetic and potential energy are negligible
 - Turbine is adiabatic (no heat transfer in/out)
-- Input combustion by products are assumed as air and an ideal gas
+- Input combustion by products are assumed to be air as an ideal gas
 
 **Summary of Operation:**
+
+The turbine subsystem converts heat/pressure energy into rotational mechanical energy. This is done by funneling high pressure/temperature gases from the combustion chamber through a series of expanding rotor vanes. As the high temperature/pressure gases pass through the turbine stages, they expand and cool while transferring their heat/pressure energy into rotational mechanical energy (causing the rotors to spin). The spinning rotors are connected to a shaft which is in turn connected to the generator so that rotational energy can be transferred. 
 
 INSERT HERE
 
