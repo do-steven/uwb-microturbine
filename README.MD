@@ -14,7 +14,7 @@ To successfully run this simulation, the following will be needed to be download
 - Simulink
 - All Simscape packages
 
-**NOTE:** All of the files downloaded from this repository will need to be placed in the same folder, as the simulation will reference and pull necessary data from the files in the folder. Once this has been completed, run MATLAB and open the **Microturbine_Master_v2.slx** file. If all of the previous steps have been done properly, the simulation should run and allow for changes to be made at the users discretion. 
+**NOTE:** All of the files downloaded from this repository will need to be placed in the same folder, as the simulation will reference and pull necessary data from the files in the folder. Once this has been completed, run MATLAB and open the **Microturbine_Master_v3.slx** file. If all of the previous steps have been done properly, the simulation should run and allow for changes to be made at the users discretion. 
 
 ## Instructions for Use
 
@@ -39,7 +39,7 @@ Descriptions for individuals components are listed below:
 The compressor subsystem uses rotational mechanical energy (provided by the Turbine) to compress air from the surrounding and pass it into the combustion chamber. Based on the required output power, the turbine subsystem calculates a total mass flow rate (air + fuel). This can be combined with the air/fuel mass ratio (which is known for combustion) in order to determine the required air mass flow rate.
 
 ### 2. Regenerator
-*Relevant File(s):* Microturbine_Master_v2.slx
+*Relevant File(s):* Microturbine_Master_v3.slx
 
 **Assumptions:**
 - 
@@ -76,7 +76,7 @@ The combustor is where fuel and air are reacted to extract chemical energy to do
 The turbine subsystem converts heat/pressure energy into rotational mechanical energy. This is done by funneling high pressure/temperature gases from the combustion chamber through a series of expanding rotor vanes. As the high temperature/pressure gases pass through the turbine stages, they expand and cool while transferring their heat/pressure energy into rotational mechanical energy (causing the rotors to spin). The spinning rotors are connected to a shaft which is in turn connected to the generator so that rotational energy can be transferred. 
 
 ### 5. Synchronous Generator
-*Relevant File(s):* Microturbine_Master_v2.slx
+*Relevant File(s):* Microturbine_Master_v3.slx
 
 **Assumptions:**
 - 60Hz operating frequency (U.S. standard)
