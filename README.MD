@@ -46,7 +46,7 @@ The compressor subsystem uses rotational mechanical energy (provided by the Turb
 
 **Summary of Operation:**
 
-INSERT HERE
+A regenerator operates similarly to a heat exchanger and is connected between the compressor outlet and the exhaust of the system. The purpose for having a regenerator is to extract disposed heat from the exhaust and using it to further heat the fluid exiting the compressor. Having a regenerator is beneficial since it increases the thermal efficiency of the system by requiring less work to be done by the compressor, and it reduces fuel consumption since the working fluid can be heated from other sources prior to combustion. It is important to note that regeneration is only effective when the exhaust temperature is greater than the compressor outlet temperature; otherwise, heat transfer is reversed and energy is inadvertently lost to the surrounding. To prevent this from occurring, gas-turbine systems with low pressure ratios will benefit more from this component than those with high pressure ratios. The implementation of the regenerator within the code requires the regenerator outlet temperature to be defined, which serves as a "design temperature." Ideally, this temperature should be as close to the exhaust temperature for optimal performance. Without a heat exchanger designed, the analysis of the regenerator can only assess the expected heat transfer through this component, which could then provide insight to the size of the heat exhcanger needed for the application.
 
 ### 3. Combustor
 *Relevant File(s):* combustion.mlx | Properties of Carbon Dioxide.xlsx | Properties of Nitrogen.xlsx | Properties of Oxygen.xlsx | Properties of Water Vapor.xlsx
