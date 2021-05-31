@@ -42,7 +42,10 @@ The compressor subsystem uses rotational mechanical energy (provided by the Turb
 *Relevant File(s):* Microturbine_Master_v3.slx
 
 **Assumptions:**
-- 
+- Regenerator is a counterflow heat exchanger
+- Changes in kinetic and potential energy are negligible
+- Maximum outlet temperature is equal to the turbine exhaust temperature
+- Regenerator is well insulated
 
 **Summary of Operation:**
 
