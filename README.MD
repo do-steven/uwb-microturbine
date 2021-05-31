@@ -57,7 +57,6 @@ A regenerator operates similarly to a heat exchanger and is connected between th
 **Assumptions:**
 - Changes in kinetic and potential energy are negligible
 - Combustion is complete
-- Combustion chamber is involves heat output but no heat input
 - Air is dry
 - Combustion products are assumed to be air
 - Only excess or stoichiometric air is considered
