@@ -19,9 +19,9 @@ To successfully run this simulation, the following will be needed to be download
 ## Instructions for Use
 
 ## Description
-Five different mechanical components layout the foundation for this simulation. These components include a compressor, regenerator, combustor, turbine, and synchronous generator. The following flowchart shows the process and general logic that the simulation follows. 
+Five different mechanical components layout the foundation for this simulation. These components include a compressor, regenerator, combustor, turbine, and synchronous generator. The following flowchart shows the baseline process and general logic that the simulation follows:
 
-**INSERT FINALIZED VERSION OF PROCESS FLOWCHART HERE**
+[Microturbine Flowchart.pdf](https://github.com/do-steven/uwb-microturbine/files/6572771/Microturbine.Flowchart.pdf)
 
 Descriptions for individuals components are listed below:
 
