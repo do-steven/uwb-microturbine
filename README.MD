@@ -12,7 +12,7 @@ To successfully run this simulation, the following will be needed to be download
 - Files contained in the repository
 - MATLAB 2020 or newer (older versions have not been tested)
 - Simulink
-- All Simscape packages
+- All Simscape packages (not required but recommended for visual purposes)
 
 **NOTE:** All of the files downloaded from this repository will need to be placed in the same folder, as the simulation will reference and pull necessary data from the files in the folder. Once this has been completed, run MATLAB and open the **Microturbine_Master_v3.slx** file. If all of the previous steps have been done properly, the simulation should run and allow for changes to be made at the users discretion. 
 
