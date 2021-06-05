@@ -17,6 +17,8 @@ To successfully run this simulation, the following will be needed to be download
 **NOTE:** All of the files downloaded from this repository will need to be placed in the same folder, as the simulation will reference and pull necessary data from the files in the folder. Once this has been completed, run MATLAB and open the **Microturbine_Master_v3.slx** file. If all of the previous steps have been done properly, the simulation should run and allow for changes to be made at the users discretion. 
 
 ## Instructions for Use
+A user manual for how to operate the simulation can be accessed through the following link:
+
 
 ## Description
 Five different mechanical components layout the foundation for this simulation. These components include a compressor, regenerator, combustor, turbine, and synchronous generator. The following flowchart shows the baseline process and general logic that the simulation follows:
