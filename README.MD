@@ -19,6 +19,7 @@ To successfully run this simulation, the following will be needed to be download
 ## Instructions for Use
 A user manual for how to operate the simulation can be accessed through the following link:
 
+[Simulation User Manual.pdf](https://github.com/do-steven/uwb-microturbine/files/6604584/Simulation.User.Manual.pdf)
 
 ## Description
 Five different mechanical components layout the foundation for this simulation. These components include a compressor, regenerator, combustor, turbine, and synchronous generator. The following flowchart shows the baseline process and general logic that the simulation follows:
