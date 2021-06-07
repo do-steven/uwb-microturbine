@@ -29,7 +29,7 @@ Five different mechanical components layout the foundation for this simulation. 
 Descriptions for individuals components are listed below:
 
 ### 1. Compressor
-*Relevant File(s):* Compressor.mlx | Properties of Air.xlsx
+*Relevant File(s):* Compressor.mlx | Microturbine.mlx | Properties of Air.xlsx
 
 **Assumptions:**
 - Changes in kinetic and potential energy are negligible
@@ -42,7 +42,7 @@ Descriptions for individuals components are listed below:
 The compressor subsystem uses rotational mechanical energy (provided by the Turbine) to compress air from the surrounding and pass it into the combustion chamber. Based on the required output power, the turbine subsystem calculates a total mass flow rate (air + fuel). This can be combined with the air/fuel mass ratio (which is known for combustion) in order to determine the required air mass flow rate.
 
 ### 2. Regenerator
-*Relevant File(s):* Microturbine_Master_v3.slx
+*Relevant File(s):* Microturbine.mlx
 
 **Assumptions:**
 - Regenerator is a counterflow heat exchanger
@@ -55,7 +55,7 @@ The compressor subsystem uses rotational mechanical energy (provided by the Turb
 A regenerator operates similarly to a heat exchanger and is connected between the compressor outlet and the exhaust of the system. The purpose for having a regenerator is to extract disposed heat from the exhaust and using it to further heat the fluid exiting the compressor. Having a regenerator is beneficial since it increases the thermal efficiency of the system by requiring less work to be done by the compressor, and it reduces fuel consumption since the working fluid can be heated from other sources prior to combustion. It is important to note that regeneration is only effective when the exhaust temperature is greater than the compressor outlet temperature; otherwise, heat transfer is reversed and energy is inadvertently lost to the surrounding. To prevent this from occurring, gas-turbine systems with low pressure ratios will benefit more from this component than those with high pressure ratios. The implementation of the regenerator within the code requires the regenerator outlet temperature to be defined, which serves as a "design temperature." Ideally, this temperature should be as close to the exhaust temperature for optimal performance. Without a heat exchanger designed, the analysis of the regenerator can only assess the expected heat transfer through this component, which could then provide insight to the size of the heat exhcanger needed for the application.
 
 ### 3. Combustor
-*Relevant File(s):* combustion.mlx | Properties of Carbon Dioxide.xlsx | Properties of Nitrogen.xlsx | Properties of Oxygen.xlsx | Properties of Water Vapor.xlsx
+*Relevant File(s):* combustion.mlx | Microturbine.mlx | Properties of Carbon Dioxide.xlsx | Properties of Nitrogen.xlsx | Properties of Oxygen.xlsx | Properties of Water Vapor.xlsx
 
 **Assumptions:**
 - Changes in kinetic and potential energy are negligible
@@ -69,7 +69,7 @@ A regenerator operates similarly to a heat exchanger and is connected between th
 The combustor is where fuel and air are reacted to extract chemical energy to do mechanical work downstream inside the turbine. A key metric when analyzing combustion is the adiabatic flame temperature. This temperature is useful since it is the maximum temperature that combustion occurs at given the composition of the reactants. Reactions occurring at the adiabatic flame temperature lose zero heat to the surrounding; therefore, this temperature is also the most efficient temperature for combustion to take place since all of the energy is used internally to do work downstream. The implementation of this code is focused toward solving for the adiabatic flame temperature. This is done by balancing the chemical equation for the reactants and quantities involved, calculating the enthalpy of the reactants, and then iteratively calculating the enthalpy of the products until the enthalpies are equal. The corresponding temperature is the adiabatic flame temperature.
 
 ### 4. Turbine
-*Relevant File(s):* Turbine.mlx
+*Relevant File(s):* Microturbine.mlx | Turbine.mlx
 
 **Assumptions:**
 - Changes in kinetic and potential energy are negligible
@@ -81,7 +81,7 @@ The combustor is where fuel and air are reacted to extract chemical energy to do
 The turbine subsystem converts heat/pressure energy into rotational mechanical energy. This is done by funneling high pressure/temperature gases from the combustion chamber through a series of expanding rotor vanes. As the high temperature/pressure gases pass through the turbine stages, they expand and cool while transferring their heat/pressure energy into rotational mechanical energy (causing the rotors to spin). The spinning rotors are connected to a shaft which is in turn connected to the generator so that rotational energy can be transferred. 
 
 ### 5. Synchronous Generator
-*Relevant File(s):* Microturbine_Master_v3.slx
+*Relevant File(s):* Microturbine.mlx | Microturbine_Master_v3.slx
 
 **Assumptions:**
 - 60Hz operating frequency (U.S. standard)
